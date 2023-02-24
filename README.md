@@ -5,7 +5,7 @@
 
 - Then, add the ojdbc11.jar to the project, using the following command:
 
-      mvn install:install-file -Dfile=ojdbc11.jar -DgroupId=com.oracle -DartifactId=ojdbc11 -Dversion=21.7 -Dpackaging=jar
+      mvn install:install-file -Dfile=./lib/ojdbc11.jar -DgroupId=com.oracle -DartifactId=ojdbc11 -Dversion=21.7 -Dpackaging=jar
 - Run the following command:
 
       mvn clean install
