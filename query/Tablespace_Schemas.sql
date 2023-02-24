@@ -3,10 +3,11 @@
 
 --CREAR TABLESPACES 
 create tablespace DAT_SREM
-datafile 'C:\app\oracle\oradata\orcl\DAT_SREM.dbf' size 10M autoextend on next 10M maxsize 10G
+datafile 'D:\oradata\orcl\DAT_SREM.dbf' size 10M autoextend on next 10M maxsize 10G
 extent management local 
 AUTOALLOCATE BLOCKSIZE 8K SEGMENT SPACE MANAGEMENT AUTO;
 
+alter session set "_ORACLE_SCRIPT"=true;
 
 -- USR_SREM
 create user USR_SREM

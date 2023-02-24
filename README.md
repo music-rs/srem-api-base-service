@@ -10,3 +10,7 @@
 
       mvn clean install
 - Execute the application and try the following API: http://localhost:8087/srem/swagger-ui/index.html
+- Create Oracle Database Container: Use the following command:
+
+      docker run -d --name oracle21ee -v D:/oradata:/opt/oracle/oradata -p 1521:1521 -p 5500:5500 -e ORACLE_PWD=oracle jhonatanit/oracle:21.3.0-ee
+- Execute sql queries (query folder)
